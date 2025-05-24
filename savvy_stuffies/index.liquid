@@ -1,0 +1,159 @@
+---
+title: Home - Savvy Stuffies
+layout: base.liquid
+---
+
+{% comment %} Page Title - change in frontmatter above {% endcomment %}
+{% capture page_title %}{{ title }}{% endcapture %}
+
+{% comment %}
+Main content block - edit the content inside this block to update the homepage text and images
+{% endcomment %}
+
+<section class="position-relative overflow-hidden m-0 hero d-flex align-items-center">
+  <!-- Text overlaid -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 hero-content">
+        <span>Get Started Today.</span>
+          <h3>Bringing Comfort to Children in Crisis</h3>
+          <p>We collect stuffed toys for children experiencing trauma and accept gun donations to fund more toys.</p>
+          <div class="mt-4">
+            <a href="donate.html" class="btn btn-danger btn-lg me-2">Donate Toys</a>
+            <a href="programs.html" class="btn btn-outline-secondary btn-lg">Our Programs</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Programs -->
+<div class="container-fluid mb-0 p-0 custom-section">
+  <div id="impact-head">
+    <div class="wave"></div>
+    <div class="wave1"></div>
+  </div>
+  <h2 class="text-center mb-4">Our Impact</h2>
+  <div class="row p-5">
+    <!-- Program Card 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 border-0">
+        <div class="thumb">
+          <div class="nail">
+            <img src="images/child1.png" class="card-img-top" alt="Child image 1" />
+          </div>
+        </div>
+        <div class="card-body rounded-3">
+          <h5 class="card-title">Our Mission</h5>
+          <p class="card-text">To empower communities through education, support, and sustainable initiatives.</p>
+          <div class="text-center">
+            <a href="about.html" class="btn btn-danger">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Program Card 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 border-0">
+        <div class="thumb">
+          <div class="nail">
+            <img src="images/thumb1.png" class="card-img-top" alt="Program image" />
+          </div>
+        </div>
+        <div class="card-body rounded-3">
+          <h5 class="card-title">Our Programs</h5>
+          <p class="card-text">Discover our initiatives that are making a real impact in the community.</p>
+          <div class="text-center">
+            <a href="programs.html" class="btn btn-danger">View Programs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Program Card 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 border-0">
+        <div class="thumb">
+          <div class="nail">
+            <img src="images/child3.png" class="card-img-top" alt="Child image 3" />
+          </div>
+        </div>
+        <div class="card-body rounded-3">
+          <h5 class="card-title">Get Involved</h5>
+          <p class="card-text">Join our team of volunteers and help us make a difference in children's lives.</p>
+          <div class="text-center">
+            <a href="volunteer.html" class="btn btn-danger">Volunteer</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Statistics Section -->
+<div class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Our Impact By The Numbers</h2>
+    <div class="row text-center">
+      <div class="col-md-3 mb-4">
+        <div class="display-4 fw-bold text-primary">5,000+</div>
+        <p class="lead">Stuffed Animals Donated</p>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="display-4 fw-bold text-primary">200+</div>
+        <p class="lead">Guns Removed</p>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="display-4 fw-bold text-primary">50+</div>
+        <p class="lead">Community Partners</p>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="display-4 fw-bold text-primary">3,000+</div>
+        <p class="lead">Children Helped</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Testimonials -->
+<div class="container my-5">
+  <h2 class="text-center mb-4">What People Are Saying</h2>
+  <div class="row">
+    <!-- Testimonial 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">"The stuffed animal my daughter received after our house fire brought her so much comfort during a difficult time."</p>
+          <p class="fst-italic text-end mb-0">— Sarah M., Parent</p>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">"I was able to safely dispose of my grandfather's old firearms and support a great cause at the same time."</p>
+          <p class="fst-italic text-end mb-0">— James T., Donor</p>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">"As a first responder, I've seen firsthand how these stuffed animals help children cope with trauma."</p>
+          <p class="fst-italic text-end mb-0">— Officer Rodriguez</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Call to Action -->
+<div class="bg-primary text-white py-5">
+  <div class="container text-center">
+    <h2 class="mb-3">Ready to Make a Difference?</h2>
+    <p class="lead mb-4">Join us in our mission to bring comfort to children in crisis.</p>
+    <a href="donate.html" class="btn btn-light btn-lg me-2">Donate Now</a>
+    <a href="volunteer.html" class="btn btn-outline-light btn-lg">Volunteer</a>
+  </div>
+</div>

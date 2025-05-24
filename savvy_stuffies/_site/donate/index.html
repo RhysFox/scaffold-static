@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donate - Savvy Stuffies</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Savvy Stuffies</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="programs.html">Our Programs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="volunteer.html">Get Involved</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active btn btn-danger text-white ms-2" aria-current="page" href="donate.html">Donate</a>
+          </li>
+          <button class="btn btn-outline-secondary ms-2" id="themeToggle" aria-label="Toggle theme">
+            <i class="bi bi-sun-fill" id="themeIcon"></i>
+          </button>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="bg-light py-5">
+    <div class="container-fluid hero mb-5 mx-0 p-5 bg-body">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h1 class="display-4 fw-bold">Support Our Mission</h1>
+          <p class="lead">Your donation helps us provide comfort to children in crisis.</p>
+        </div>
+        <div class="col-lg-4">
+          <img src="https://via.placeholder.com/400x300" alt="Donation Impact" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+    <!-- Bootstrap 5 jumbotron-style hero section -->
+    <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Make a Difference Today</h1>
+        <p class="col-md-8 fs-4">Your donation directly supports our mission to help children in need. Every contribution, no matter the size, creates a positive impact in our community.</p>
+        <button class="btn btn-primary btn-lg" type="button" onclick="document.getElementById('donation-form').scrollIntoView({behavior: 'smooth'})">Donate Now</button>
+      </div>
+    </div>
+
+    <!-- Donation Options -->
+    <div class="bg-light p-4 rounded mb-5">
+      <h2 class="text-center mb-4">Ways to Give</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <h3 class="card-title">One-Time Donation</h3>
+              <p class="card-text">Make an immediate impact with a one-time gift of any amount.</p>
+              <a href="#donation-form" class="btn btn-primary">Donate Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <h3 class="card-title">Monthly Giving</h3>
+              <p class="card-text">Become a sustaining supporter with a recurring monthly donation.</p>
+              <a href="#donation-form" class="btn btn-primary">Become a Monthly Donor</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <h3 class="card-title">Legacy Giving</h3>
+              <p class="card-text">Make a lasting impact by including us in your estate planning.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Donation Form -->
+    <div id="donation-form" class="card mb-5">
+      <div class="card-header bg-primary text-white">
+        <h3 class="mb-0">Donation Form</h3>
+      </div>
+      <div class="card-body">
+        <form>
+          <!-- Donation Amount -->
+          <div class="mb-3">
+            <label class="form-label">Select Donation Amount</label>
+            <div class="btn-group w-100" role="group" aria-label="Donation amount options">
+              <input type="radio" class="btn-check" name="donationAmount" id="amount25" autocomplete="off" checked>
+              <label class="btn btn-outline-primary" for="amount25">$25</label>
+              
+              <input type="radio" class="btn-check" name="donationAmount" id="amount50" autocomplete="off">
+              <label class="btn btn-outline-primary" for="amount50">$50</label>
+              
+              <input type="radio" class="btn-check" name="donationAmount" id="amount100" autocomplete="off">
+              <label class="btn btn-outline-primary" for="amount100">$100</label>
+              
+              <input type="radio" class="btn-check" name="donationAmount" id="amountCustom" autocomplete="off">
+              <label class="btn btn-outline-primary" for="amountCustom">Custom</label>
+            </div>
+          </div>
+          
+          <!-- Custom Amount (initially hidden) -->
+          <div class="mb-3" id="customAmountField" style="display: none;">
+            <label for="customAmount" class="form-label">Enter Custom Amount</label>
+            <div class="input-group">
+              <span class="input-group-text">$</span>
+              <input type="number" class="form-control" id="customAmount" placeholder="Enter amount">
+            </div>
+          </div>
+          
+          <!-- Donation Frequency -->
+          <div class="mb-3">
+            <label class="form-label">Donation Frequency</label>
+            <select class="form-select" id="donationFrequency">
+              <option value="one-time">One-time donation</option>
+              <option value="monthly">Monthly donation</option>
+              <option value="quarterly">Quarterly donation</option>
+              <option value="annually">Annual donation</option>
+            </select>
+          </div>
+          
+          <!-- Personal Information -->
+          <h4 class="mt-4 mb-3">Personal Information</h4>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="firstName" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="lastName" required>
+            </div>
+          </div>
+          
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="phone">
+          </div>
+          
+          <!-- Payment Information -->
+          <h4 class="mt-4 mb-3">Payment Information</h4>
+          <div class="mb-3">
+            <label for="cardName" class="form-label">Name on Card</label>
+            <input type="text" class="form-control" id="cardName" required>
+          </div>
+          
+          <div class="mb-3">
+            <label for="cardNumber" class="form-label">Card Number</label>
+            <input type="text" class="form-control" id="cardNumber" required>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="expDate" class="form-label">Expiration Date</label>
+              <input type="text" class="form-control" id="expDate" placeholder="MM/YY" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cvv" required>
+            </div>
+          </div>
+          
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="receiveUpdates">
+            <label class="form-check-label" for="receiveUpdates">I would like to receive updates about how my donation is making an impact</label>
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-lg w-100">Complete Donation</button>
+        </form>
+      </div>
+    </div>
+      
+    <!-- Testimonials -->
+    <h2 class="mb-4">Donor Stories</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">"I've been donating monthly for two years now, and it's amazing to see the impact my contributions have made. The regular updates I receive show exactly how my money is helping."</p>
+            <p class="fst-italic text-end mb-0">— Jane D.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">"After seeing the work this organization does firsthand, I knew I had to support their mission. My donation has helped fund programs that are truly changing lives."</p>
+            <p class="fst-italic text-end mb-0">— Michael S.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">"What I appreciate most is the transparency. I know exactly where my donations go and how they're being used to help those in need."</p>
+            <p class="fst-italic text-end mb-0">— Sarah T.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Savvy Stuffies</h5>
+          <p>123 Main Street<br>City, State 12345<br>Phone: (123) 456-7890</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <h5>Connect With Us</h5>
+          <div class="social-icons">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-12 text-center">
+          <p class="mb-0">&copy; 2023 Savvy Stuffies. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+  
+  <script>
+    // Show/hide custom amount field when "Other" is selected
+    document.addEventListener('DOMContentLoaded', function() {
+      const amountCustom = document.getElementById('amountCustom');
+      const customAmountField = document.getElementById('customAmountField');
+      
+      if (amountCustom && customAmountField) {
+        amountCustom.addEventListener('change', function() {
+          if (this.checked) {
+            customAmountField.style.display = 'block';
+          } else {
+            customAmountField.style.display = 'none';
+          }
+        });
+        
+        // Hide custom amount field when other amounts are selected
+        const otherAmounts = document.querySelectorAll('input[name="donationAmount"]:not(#amountCustom)');
+        otherAmounts.forEach(function(radio) {
+          radio.addEventListener('change', function() {
+            customAmountField.style.display = 'none';
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container-fluid">
+    <!-- Logo on the far left -->
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      <div id="logo">
+        <img src="/images/Savvys_Logo.png" alt="Savvy Stuffies Logo" width="45" height="45" class="me-2">
+      </div>
+    </a>
+
+    <!-- Toggler button for mobile view -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navigation links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item">
+          <a class="nav-link {% if page.url == '/' %}active{% endif %}" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url contains 'about' %}active{% endif %}" href="/about/">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url contains 'programs' %}active{% endif %}" href="/programs/">Our Programs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url contains 'volunteer' %}active{% endif %}" href="/volunteer/">Get Involved</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url contains 'contact' %}active{% endif %}" href="/contact/">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-danger ms-2" href="/donate/" role="button">Donate</a>
+        </li>
+
+        <li class="nav-item">
+          <button class="btn btn-dark ms-2" id="themeToggle" aria-label="Toggle theme">
+            <i class="bi bi-sun-fill" id="themeIcon"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
